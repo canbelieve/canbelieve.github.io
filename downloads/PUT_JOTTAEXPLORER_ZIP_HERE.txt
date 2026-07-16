@@ -1,0 +1,5 @@
+Carica in questa cartella il file reale con il nome esatto:
+JottaExplorer.zip
+
+Il pulsante di download punta a:
+https://canbelieve.github.io/downloads/JottaExplorer.zip

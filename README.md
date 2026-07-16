@@ -1,10 +1,13 @@
 # KApps
 
-Portale pubblico delle applicazioni disponibili su:
+Portale principale delle applicazioni pubblicate da **canbelieve**.
 
-https://canbelieve.github.io/
+- Sito: https://canbelieve.github.io/
+- KAde Suite: https://canbelieve.github.io/kade-suite/
+- Jotta Explorer: https://canbelieve.github.io/jotta-explorer.html
 
-## Applicazioni
+## Download di Jotta Explorer
 
-- KAde Suite — https://canbelieve.github.io/kade-suite/
-- Jotta Explorer — https://canbelieve.github.io/jotta-explorer.html
+Caricare il pacchetto reale con questo percorso e nome esatto:
+
+`downloads/JottaExplorer.zip`
