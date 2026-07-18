@@ -21,3 +21,6 @@ a{color:inherit}.container{width:min(1160px,calc(100% - 32px));margin:auto}.site
 [hidden]{display:none!important}
 @media(max-width:920px){.apps-grid,.product-grid,.content-grid{grid-template-columns:1fr}.app-shot img{height:auto}.feature-strip{grid-template-columns:1fr}.nav a:not(.keep-mobile){display:none}.hero{padding-top:54px}.section-head{display:block}.section-head p{margin-top:10px}}
 @media(max-width:560px){.header-inner{min-height:64px}.brand{font-size:19px}.brand-mark{width:36px;height:36px}.hero h1{font-size:54px}.hero-copy,.product-copy p{font-size:18px}.app-content{padding:21px}.app-shot{margin:14px 14px 0}.section{padding:44px 0}}
+
+/* KAde Suite SDI screenshot: preserve the original proportions. */
+.app-card:first-child .app-shot img{height:auto;aspect-ratio:auto;object-fit:contain;object-position:top}
