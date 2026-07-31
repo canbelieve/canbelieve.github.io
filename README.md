@@ -29,9 +29,10 @@ https://github.com/canbelieve/canbelieve.github.io/releases
 
 I file Windows di AblVST Studio sono pubblicati direttamente con GitHub Pages nella cartella `downloads/ablvst-studio/`:
 
-- installer: `AblVST-Studio-1.0.0-Windows-x64-Setup.exe`
-- versione portatile: `AblVST-Studio-1.0.0-Windows-x64-Portable.zip`
+- installer: `AblVST-Studio-1.0.1-Windows-x64-Setup.exe`
+- versione portatile: `AblVST-Studio-1.0.1-Windows-x64-Portable.zip`
 - checksum: `SHA256SUMS-windows.txt`
+- report: `BUILD-REPORT-windows.txt`
 
 
 ---
