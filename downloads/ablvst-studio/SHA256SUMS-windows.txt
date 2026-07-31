@@ -1,2 +1,2 @@
-d89d32b8744ec49378aa16be818d39b3191d18ac64870cd49c47524a15661f08  AblVST-Studio-1.0.1-Windows-x64-Portable.zip
-4f8f04df22f2c097545f1c1495f927ac8c9eba5d1baaf989f46c676ee146b4fc  AblVST-Studio-1.0.1-Windows-x64-Setup.exe
+11f916052c7622146d29f7dc6aa7c27ef36c0c7fa969f9d3e9da02cf2c2b4022  AblVST-Studio-1.0.1-Windows-x64-Portable.zip
+a08f5e3ad1b85d6dd2d90181f4746027514e82aec88b616851bac59fca5b2db4  AblVST-Studio-1.0.1-Windows-x64-Setup.exe
