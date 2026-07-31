@@ -15,10 +15,11 @@
 
 (() => {
   const releaseInfo = document.querySelectorAll('[data-jotta-release-info]');
-  if (!releaseInfo.length) return;
+  const setupLinks = document.querySelectorAll('[data-jotta-download="setup"]');
+  const portableLinks = document.querySelectorAll('[data-jotta-download="portable"]');
+  if (!releaseInfo.length && !setupLinks.length && !portableLinks.length) return;
 
   const repository = 'canbelieve/canbelieve.github.io';
-  const assetName = 'JottaExplorer.zip';
   const apiUrl = `https://api.github.com/repos/${repository}/releases/latest`;
   const formatSize = (bytes) => `${(bytes / (1024 * 1024)).toFixed(1)} MB`;
 
@@ -28,11 +29,19 @@
       return response.json();
     })
     .then((release) => {
-      const asset = release.assets.find(({ name }) => name === assetName);
-      if (!asset) throw new Error(`${assetName} non trovato nella release`);
-
       const version = release.tag_name.replace(/^v/i, '');
-      const text = `Version ${version} • Windows x64 • ${formatSize(asset.size)}`;
+      const setupName = `JottaExplorer-${version}-Windows-x64-Setup.exe`;
+      const portableName = `JottaExplorer-${version}-Windows-x64-Portable.zip`;
+      const setupAsset = release.assets.find(({ name }) => name === setupName);
+      const portableAsset = release.assets.find(({ name }) => name === portableName);
+      if (!setupAsset) throw new Error(`${setupName} non trovato nella release`);
+
+      setupLinks.forEach((link) => { link.href = setupAsset.browser_download_url; });
+      if (portableAsset) {
+        portableLinks.forEach((link) => { link.href = portableAsset.browser_download_url; });
+      }
+
+      const text = `Version ${version} • Windows x64 • ${formatSize(setupAsset.size)} • Beta`;
       releaseInfo.forEach((element) => { element.textContent = text; });
     })
     .catch(() => {
