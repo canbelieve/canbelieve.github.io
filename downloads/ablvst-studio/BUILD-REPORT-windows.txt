@@ -1,6 +1,6 @@
 ﻿AblVST Studio 1.0.1 Windows build report
-Generated: 2026-07-31T19:40:49
+Generated: 2026-08-01T17:44:41
 Packaging: PyInstaller one-folder, windowed, UPX disabled
 Executable self-test: passed
 Authenticode: NotSigned (expected without a paid certificate)
-Microsoft Defender: Unavailable: Microsoft Defender antivirus is disabled on this computer
+Microsoft Defender: Not requested
