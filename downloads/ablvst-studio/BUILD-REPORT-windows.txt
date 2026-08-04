@@ -1,6 +1,0 @@
-﻿AblVST Studio 1.0.1 Windows build report
-Generated: 2026-08-01T21:04:28
-Packaging: PyInstaller one-folder, windowed, UPX disabled
-Executable self-test: passed
-Authenticode: NotSigned (expected without a paid certificate)
-Microsoft Defender: Not requested
