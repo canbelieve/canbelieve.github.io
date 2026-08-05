@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://canbelieve.github.io/sitemap.xml
+Sitemap: https://canbelieve.github.io/kade-suite/sitemap.xml

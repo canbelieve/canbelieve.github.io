@@ -10,12 +10,18 @@ https://canbelieve.github.io/
 
 - **KAde Suite**  
   https://canbelieve.github.io/kade-suite/
+  
+  Estensione Chrome per utenti, CAF e studi che lavorano con Agenzia delle Entrate, cassetto fiscale, F24, CU e fatture elettroniche SDI. I documenti restano archiviati localmente.
 
 - **Jotta Explorer**  
   https://canbelieve.github.io/jotta-explorer.html
+  
+  Utility Windows per esplorare archivi Jottacloud, cercare file nell'indice locale e scaricare contenuti senza sincronizzare tutto il cloud.
 
 - **AblVST Studio**  
   https://canbelieve.github.io/ablvst-studio.html
+  
+  Analizzatore offline di Ableton Live Set `.als`: mostra tracce, media, routing e plugin VST2, VST3 e AU prima di aprire Live.
 
 ## Download
 
@@ -33,14 +39,7 @@ https://github.com/canbelieve/ablvst-studio/releases/latest
 
 La pagina prodotto `ablvst-studio.html` legge automaticamente la release pubblicata piu' recente e collega installer Windows, versione portatile, DMG macOS, checksum e report di build. Per ogni aggiornamento e' quindi sufficiente pubblicare una nuova release con gli asset di entrambe le piattaforme; non serve modificare i link della pagina.
 
-La cartella `downloads/ablvst-studio/` rimane temporaneamente come fallback locale per i file Windows della versione 1.0.1 e potra' essere rimossa dopo aver verificato che la prima release unificata contenga tutti gli asset:
-
-- installer: `AblVST-Studio-1.0.1-Windows-x64-Setup.exe`
-- versione portatile: `AblVST-Studio-1.0.1-Windows-x64-Portable.zip`
-- checksum: `SHA256SUMS-windows.txt`
-- report: `BUILD-REPORT-windows.txt`
-
-Gli asset macOS devono essere aggiunti alla release GitHub insieme al DMG e, quando disponibili, al relativo ZIP, checksum e report. La release deve essere pubblicata come release stabile, non come bozza o prerelease.
+Gli asset Windows, macOS, checksum e report vengono pubblicati nella release del repository `canbelieve/ablvst-studio`. La release deve essere pubblicata come release stabile, non come bozza o prerelease.
 
 
 ---
