@@ -1,20 +1,20 @@
 <!doctype html>
-<html lang="it">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>AblVST Studio &mdash; Leggi Ableton Live prima di aprirlo</title>
-  <meta name="description" content="AblVST Studio è l'ispettore locale e offline-first per Ableton Live: mappe dei Set, plugin installati, media, routing ed export CSV/PDF.">
+  <title>AblVST Studio &mdash; Inspect Ableton Live before opening it</title>
+  <meta name="description" content="AblVST Studio is a local, offline-first inspector for Ableton Live: Set maps, installed plug-ins, media, routing and CSV/PDF export.">
   <link rel="canonical" href="https://canbelieve.github.io/ablvst-studio.html">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="AblVST Studio &mdash; Leggi Ableton Live prima di aprirlo">
-  <meta property="og:description" content="Ispeziona Set Ableton Live, dipendenze plugin, media e routing localmente, prima di aprire Live.">
+  <meta property="og:title" content="AblVST Studio &mdash; Inspect Ableton Live before opening it">
+  <meta property="og:description" content="Inspect Ableton Live Sets, plug-in dependencies, media and routing locally before opening Live.">
   <meta property="og:image" content="https://canbelieve.github.io/assets/ablvst-studio.png">
   <meta property="og:url" content="https://canbelieve.github.io/ablvst-studio.html">
   <link rel="icon" href="assets/favicon-32.png">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="ablvst-page">
+<body class="ablvst-page" data-default-language="en" data-language-storage-key="ablvst-language">
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="index.html"><span class="brand-mark">K</span>KApps</a>
@@ -34,11 +34,11 @@
     <section class="container product-hero">
       <div class="product-grid">
         <div class="product-copy">
-          <div class="eyebrow" data-lang="it">Il tuo preflight desk locale per Ableton Live</div>
-          <div class="eyebrow" data-lang="en">Your local Ableton Live preflight desk</div>
+          <div class="eyebrow" data-lang="it">Controlla i tuoi progetti Ableton Live prima di aprirli</div>
+          <div class="eyebrow" data-lang="en">Inspect your Ableton Live projects before opening them</div>
           <h1>AblVST <span>Studio</span></h1>
-          <p data-lang="it">Capisci un Live Set prima del primo click. AblVST Studio legge i file <code>.als</code> in sola lettura e trasforma il progetto in una mappa chiara di tracce, dispositivi, plugin, media, routing e dipendenze.</p>
-          <p data-lang="en">Understand a Live Set before the first click. AblVST Studio reads <code>.als</code> files read-only and turns a project into a clear map of tracks, devices, plug-ins, media, routing and dependencies.</p>
+          <p data-lang="it">Vuoi sapere cosa contiene un Live Set prima ancora di aprirlo? AblVST Studio legge i file <code>.als</code> in sola lettura e ne ricava una mappa chiara: tracce, dispositivi, plugin, media, routing e dipendenze, tutto a colpo d'occhio.</p>
+          <p data-lang="en">Want to know what's inside a Live Set before you open it? AblVST Studio reads <code>.als</code> files in read-only mode and turns them into a clear map of tracks, devices, plug-ins, media, routing and dependencies, all at a glance.</p>
           <div class="hero-actions" style="justify-content:flex-start">
             <a class="button ablvst" href="downloads/ablvst-studio/AblVST-Studio-1.0.1-Windows-x64-Setup.exe" data-ablvst-download="windows-setup" data-lang="it">Scarica per Windows</a>
             <a class="button ablvst" href="downloads/ablvst-studio/AblVST-Studio-1.0.1-Windows-x64-Setup.exe" data-ablvst-download="windows-setup" data-lang="en">Download for Windows</a>
@@ -59,127 +59,122 @@
     <section class="container section" id="features">
       <div class="section-heading">
         <div>
-          <div class="eyebrow" data-lang="it">Un progetto ordinato è il punto di partenza</div>
-          <div class="eyebrow" data-lang="en">A well-organized project is the starting point</div>
-          <h2 data-lang="it">La verità del Set parte dall'archivio</h2>
-          <h2 data-lang="en">A Set is only as reliable as its archive</h2>
+          <div class="eyebrow" data-lang="it">UN PROGETTO ORDINATO È IL PUNTO DI PARTENZA</div>
+          <div class="eyebrow" data-lang="en">A WELL-ORGANIZED PROJECT IS THE STARTING POINT</div>
+          <h2 data-lang="it">E’ importante avere una struttura ordinata dei propri progetti</h2>
+          <h2 data-lang="en">A well-organized project structure matters</h2>
         </div>
       </div>
       <div class="content-grid">
         <article class="panel callout">
-          <h2 data-lang="it">Prima: una struttura fatta bene</h2><h2 data-lang="en">First: build a proper archive</h2>
-          <p data-lang="it">Usa una cartella generale, per esempio <strong>Progetti di Ableton</strong>, con una cartella per ogni progetto. Dentro ogni progetto conserva il file <code>.als</code>, le versioni, <code>Samples</code>, <code>Backup</code> e gli altri file relativi. Con percorsi sparsi o archivi incompleti, nessun lettore può promettere una rappresentazione fedele.</p>
-          <p data-lang="en">Use one general folder, such as <strong>Ableton Projects</strong>, with one folder per project. Keep the <code>.als</code> file, versions, <code>Samples</code>, <code>Backup</code> and related files inside each project folder. With scattered paths or incomplete archives, no reader can promise a faithful representation.</p>
+          <h2 data-lang="it">Prima: una struttura fatta bene</h2><h2 data-lang="en">First: keep your project archive organized</h2>
+          <p data-lang="it">Tieni una cartella generale, per esempio <strong>Progetti di Ableton</strong>, con una sottocartella per ogni progetto. Dentro conserva i file <code>.als</code> insieme a <code>Samples</code>, <code>Backup</code> e agli altri file collegati. Se i percorsi sono sparsi o l'archivio è incompleto, nessun lettore — nemmeno questo — può darti una lettura davvero fedele.</p>
+          <p data-lang="en">Keep one main folder, such as <strong>Ableton Projects</strong>, with a subfolder for each project. Store each <code>.als</code> file together with <code>Samples</code>, <code>Backup</code> and the other related files. If paths are scattered or the archive is incomplete, no reader — including this one — can give you a truly faithful picture.</p>
         </article>
         <article class="panel">
           <h2 data-lang="it">Libreria di Set</h2><h2 data-lang="en">Set library</h2>
-          <p data-lang="it">Scansiona una cartella generale, trova i Set anche nelle sottocartelle e scegli se mostrare solo la versione più recente o tutte le versioni. La libreria ricorda l'ultima cartella e l'ultimo Set analizzato.</p>
-          <p data-lang="en">Scan one project root, find Sets in subfolders and choose whether to show only the newest version or every version. The library remembers the last folder and last inspected Set.</p>
+          <p data-lang="it">Scansiona la cartella generale e AblVST Studio troverà i Set, mostrando solo la versione più recente o, a scelta, tutte quelle presenti. Ricorda l'ultima cartella e l'ultimo Set che hai analizzato, così riprendi da dove avevi lasciato.</p>
+          <p data-lang="en">Scan the main folder and AblVST Studio will find your Sets, showing only the newest version or, if you prefer, every version. It remembers the last folder and Set you inspected, so you can pick up where you left off.</p>
         </article>
         <article class="panel">
           <h2 data-lang="it">Panoramica tecnica del Set</h2><h2 data-lang="en">Technical Set overview</h2>
-          <p data-lang="it">Vedi versione di Ableton Live, BPM, indicazione di tempo, dimensione del file, locator, tracce audio e MIDI, gruppi, Return, Master, clip, automazioni e dispositivi.</p>
-          <p data-lang="en">See the Ableton Live version, BPM, time signature, file size, locators, audio and MIDI tracks, groups, Returns, Master, clips, automation and devices.</p>
+          <p data-lang="it">Trovi subito versione di Ableton Live, BPM, indicazione di tempo e dimensione del file. Sotto, l'inventario completo del progetto: tracce audio e MIDI, gruppi, Return, Master, clip e dispositivi.</p>
+          <p data-lang="en">You immediately see the Ableton Live version, BPM, time signature and file size. Below that is the complete project inventory: audio and MIDI tracks, groups, Returns, Master, clips and devices.</p>
         </article>
         <article class="panel">
           <h2 data-lang="it">Plugin map</h2><h2 data-lang="en">Plugin map</h2>
-          <p data-lang="it">Elenca ogni plugin di terze parti con nome, produttore, formato, tipo, identificatore, numero di istanze, tracce, Rack e posizione del device. Filtra per tutti, mancanti o disponibili e passa dalla mappa plugin alla traccia utilizzatrice.</p>
-          <p data-lang="en">List every third-party plug-in with name, vendor, format, type, identifier, instance count, tracks, Rack and device position. Filter all, missing or available items and jump between a plug-in and its track.</p>
+          <p data-lang="it">Ogni plugin di terze parti viene elencato con nome, produttore, formato, tipo, identificatore, numero di istanze, tracce, Rack e posizione. Puoi filtrare per plugin mancanti o disponibili e saltare direttamente dalla mappa alla traccia che lo usa.</p>
+          <p data-lang="en">Each third-party plug-in is listed with its name, vendor, format, type, identifier, instance count, tracks, Rack and position. Filter for missing or available plug-ins and jump straight from the map to the track that uses it.</p>
         </article>
         <article class="panel">
           <h2 data-lang="it">Database locale dei plugin</h2><h2 data-lang="en">Local plug-in database</h2>
-          <p data-lang="it">Scansiona i plugin installati sul computer e crea un inventario ricercabile e raggruppabile per nome, produttore, formato, tipo, versione, architettura o percorso. Le versioni installate sono metadati locali informativi, non vengono confrontate con il Set e il database resta in sola lettura nella cache dell'app.</p>
-          <p data-lang="en">Scan installed plug-ins and create a searchable inventory grouped by name, vendor, format, type, version, architecture or path. Installed versions are local informational metadata, never compared with the Set, and the read-only database stays in the app cache.</p>
+          <p data-lang="it">Scansiona i plugin installati sul computer e costruisce un inventario ricercabile, raggruppabile per nome, produttore, formato, tipo, versione, architettura o percorso.</p>
+          <p data-lang="en">Scan the plug-ins installed on your computer and build a searchable inventory that you can group by name, vendor, format, type, version, architecture or path.</p>
         </article>
         <article class="panel">
           <h2 data-lang="it">Media Health</h2><h2 data-lang="en">Media Health</h2>
-          <p data-lang="it">Controlla i riferimenti audio di clip, Simpler e Sampler/MultiSampler sui percorsi salvati. Mostra file trovati, mancanti, origine del percorso, tracce e dispositivi utilizzatori; permette di riprodurre i file supportati, aprire la posizione e copiare o esportare la lista dei mancanti.</p>
-          <p data-lang="en">Check audio references from clips, Simpler and Sampler/MultiSampler against their saved paths. See found files, missing files, path origin, tracks and devices; play supported files, reveal their location and copy or export the missing list.</p>
+          <p data-lang="it">Controlla i riferimenti audio di clip, Simpler e Sampler/MultiSampler sui percorsi salvati, e ti dice cosa è stato trovato, cosa manca, da dove arriva il percorso e quali tracce o dispositivi lo usano. I file supportati si riproducono al volo con un semplice clic sul nome del media, la loro posizione si apre con un clic, e la lista dei mancanti si copia o si esporta.</p>
+          <p data-lang="en">Check the audio references used by clips, Simpler and Sampler/MultiSampler against their saved paths. See what was found, what is missing, where each path comes from, and which tracks or devices use it. Supported files play when you click the media name; open their location with a click, and copy or export the missing-file list.</p>
         </article>
         <article class="panel">
           <h2 data-lang="it">Session map e Rack annidati</h2><h2 data-lang="en">Session map and nested Racks</h2>
-          <p data-lang="it">Leggi la gerarchia delle tracce, i device chain, i Rack annidati e i dispositivi interni. I plugin mancanti sono indicati anche nella catena della traccia e la navigazione resta collegata alla Plugin map.</p>
-          <p data-lang="en">Read track hierarchy, device chains, nested Racks and internal devices. Missing plug-ins are also marked in the track chain, with navigation linked back to the Plugin map.</p>
+          <p data-lang="it">Mostra la gerarchia delle tracce, le device-chain, i Rack annidati e i dispositivi interni. I plugin mancanti vengono segnalati direttamente nella catena della traccia, con un collegamento diretto alla Plugin map.</p>
+          <p data-lang="en">View the track hierarchy, device chains, nested Racks and internal devices. Missing plug-ins are flagged directly in the track chain, with a link back to the Plugin map.</p>
         </article>
         <article class="panel">
           <h2 data-lang="it">Routing e flusso del segnale</h2><h2 data-lang="en">Routing and signal flow</h2>
-          <p data-lang="it">Analizza mandate, Return, catene effetti e tracce che alimentano ogni Return. La vista Routing rende leggibile il percorso del segnale senza aprire Ableton Live.</p>
-          <p data-lang="en">Inspect sends, Returns, effect chains and the tracks feeding each Return. The Routing view makes signal flow readable without opening Ableton Live.</p>
+          <p data-lang="it">Analizza mandate, Return, catene effetti e le tracce che alimentano ogni Return, rendendo leggibile il flusso del segnale senza dover aprire Ableton Live.</p>
+          <p data-lang="en">Analyze sends, Returns, effect chains and the tracks feeding each Return, making the signal flow easy to understand without opening Ableton Live.</p>
         </article>
         <article class="panel">
           <h2 data-lang="it">Export professionale del Set</h2><h2 data-lang="en">Professional Set export</h2>
-          <p data-lang="it">Esporta la lista plugin necessaria in CSV o PDF, in modalità <strong>Summary</strong> con una riga per plugin unico oppure <strong>Detailed</strong> con una riga per ogni istanza, traccia, gruppo, Rack e posizione.</p>
-          <p data-lang="en">Export the plug-in requirements as CSV or PDF in <strong>Summary</strong> mode, one row per unique plug-in, or <strong>Detailed</strong> mode, one row per instance, track, group, Rack and position.</p>
-          <p data-lang="it">I report includono nome del Set, versione di Live, utilizzo e disponibilità locale; vengono creati offline senza scrivere accanto al file <code>.als</code>.</p>
-          <p data-lang="en">Reports include the Set name, Live version, usage and local availability; they are created offline without writing beside the <code>.als</code> file.</p>
+          <p data-lang="it">Esporta la lista dei plugin richiesti in CSV o PDF: modalità <strong>Summary</strong>, una riga per plugin, oppure <strong>Detailed</strong>, con una riga per ogni istanza, traccia, gruppo, Rack e posizione.</p>
+          <p data-lang="en">Export the list of required plug-ins as CSV or PDF: <strong>Summary</strong> mode gives one row per plug-in; <strong>Detailed</strong> mode gives one row for every instance, track, group, Rack and position.</p>
+          <p data-lang="it">I report indicano nome del Set, versione di Live, utilizzo e disponibilità locale, e vengono generati offline senza scrivere nulla accanto al file <code>.als</code>.</p>
+          <p data-lang="en">Reports show the Set name, Live version, usage and local availability. They are generated offline without writing anything next to the <code>.als</code> file.</p>
         </article>
         <article class="panel">
           <h2 data-lang="it">Preferenze e diagnostica</h2><h2 data-lang="en">Preferences and troubleshooting</h2>
-          <p data-lang="it">Gestisci versioni di Ableton Live, cartelle plugin standard e personalizzate, visibilità delle versioni dei Set, lingua, cache e log applicativo generico. Le cartelle aggiunte dall'utente sono additive e i percorsi standard restano visibili anche quando non esistono.</p>
-          <p data-lang="en">Manage Ableton Live versions, standard and custom plug-in folders, Set version visibility, language, cache and the generic application log. User-added folders are additive and standard paths remain visible even when unavailable.</p>
+          <p data-lang="it">Da qui gestisci le versioni di Ableton Live installate, le cartelle plugin standard e personalizzate, la visibilità delle versioni dei Set, la lingua, la cache e il log dell'applicazione.</p>
+          <p data-lang="en">Manage installed Ableton Live versions, standard and custom plug-in folders, visibility of Set versions, language, cache and the application log.</p>
         </article>
         <article class="panel">
           <h2 data-lang="it">Apri con la versione giusta di Live</h2><h2 data-lang="en">Open with the right Live version</h2>
-          <p data-lang="it">Quando sono presenti più installazioni locali di Ableton Live, AblVST Studio può mostrarti le versioni compatibili e aprire il Set con quella scelta.</p>
-          <p data-lang="en">When multiple local Ableton Live installations are available, AblVST Studio can show compatible versions and open the Set with the selected one.</p>
+          <p data-lang="it">Se sul computer ci sono più versioni di Ableton Live installate, AblVST Studio ti mostra quelle compatibili con il Set e puoi decidere con quale versione di Ableton Live aprire il progetto.</p>
+          <p data-lang="en">If multiple versions of Ableton Live are installed on your computer, AblVST Studio shows which ones are compatible with the Set, and you can choose which version to use to open the project.</p>
         </article>
         <article class="panel">
           <h2 data-lang="it">Windows e macOS</h2><h2 data-lang="en">Windows and macOS</h2>
-          <p data-lang="it">Su Windows vengono rilevati VST2 e VST3, inclusi plugin VST3 in formato file e bundle. Su macOS sono supportati VST2, VST3 e Audio Units. L'app macOS usa una finestra nativa Cocoa/WebKit, senza dipendere da Chrome.</p>
-          <p data-lang="en">Windows detects VST2 and VST3, including file-form and bundle-form VST3 plug-ins. macOS supports VST2, VST3 and Audio Units. The macOS app uses a native Cocoa/WebKit window without relying on Chrome.</p>
-        </article>
-        <article class="panel callout">
-          <h2 data-lang="it">Cosa non promette</h2><h2 data-lang="en">What it does not promise</h2>
-          <p data-lang="it">La disponibilità è un controllo locale prudente per nome e formato, non una garanzia di licenza o compatibilità. La versione del plugin salvata nel progetto <code>.als</code>, il confronto tra versioni, il sample rate, la bit depth e l'export JSON sono volutamente esclusi.</p>
-          <p data-lang="en">Availability is a conservative local name-and-format check, not a license or compatibility guarantee. Plug-in versions saved in the <code>.als</code>, version comparison, sample rate, bit depth and JSON export are intentionally excluded.</p>
+          <p data-lang="it">Su Windows vengono rilevati i plugin VST2 e VST3, inclusi i VST3 in formato file e bundle. Su macOS sono supportati anche gli Audio Units, oltre a VST2 e VST3. L'app macOS gira in una finestra nativa Cocoa/WebKit e non dipende da Chrome.</p>
+          <p data-lang="en">On Windows, VST2 and VST3 plug-ins are detected, including VST3 plug-ins in both file and bundle formats. On macOS, Audio Units are supported alongside VST2 and VST3. The macOS app runs in a native Cocoa/WebKit window and does not depend on Chrome.</p>
         </article>
         <article class="panel">
           <h2 data-lang="it">Offline e privato</h2><h2 data-lang="en">Offline and private</h2>
-          <p data-lang="it">L'analisi dei Set avviene sul tuo computer. I file originali restano intatti, i dati derivati finiscono solo nella cache del sistema e nessun progetto o metadato viene caricato online.</p>
-          <p data-lang="en">Set analysis happens on your computer. Original files remain untouched, derived data stays only in the system cache, and no project or metadata is uploaded online.</p>
+          <p data-lang="it">L'analisi dei Set avviene interamente sul tuo computer. I file originali non vengono toccati, i dati derivati restano nella cache locale e nessun progetto o metadato viene mai caricato online.</p>
+          <p data-lang="en">Set analysis happens entirely on your computer. Original files are never modified, derived data stays in the local cache, and no project or metadata is ever uploaded online.</p>
         </article>
       </div>
 
       <section class="screenshot-section" id="screenshots" aria-label="AblVST Studio screenshots">
         <div class="section-head">
           <div>
-            <div class="eyebrow" data-lang="it">Dentro AblVST Studio</div>
-            <div class="eyebrow" data-lang="en">Inside AblVST Studio</div>
+            <div class="eyebrow" data-lang="it">DENTRO ABLVST STUDIO</div>
+            <div class="eyebrow" data-lang="en">INSIDE ABLVST STUDIO</div>
             <h2 data-lang="it">Vedi subito cosa contiene il tuo Set</h2>
-            <h2 data-lang="en">See what is inside your Set at a glance</h2>
+            <h2 data-lang="en">See what your Set contains at a glance</h2>
           </div>
-          <p data-lang="it">Le viste principali di AblVST Studio raccolgono plugin, tracce, routing, media e configurazione in un'unica lettura offline.</p>
-          <p data-lang="en">AblVST Studio brings plug-ins, tracks, routing, media and configuration into one offline reading experience.</p>
+          <p data-lang="it">Le viste principali di AblVST Studio mettono insieme plugin, tracce, routing, media e configurazione in un'unica lettura offline.</p>
+          <p data-lang="en">AblVST Studio brings plug-ins, tracks, routing, media and configuration together in a single offline view.</p>
         </div>
 
         <div class="screenshot-grid">
           <figure class="screenshot-card screenshot-card-wide">
-            <div class="screenshot-frame"><img src="assets/Pluginmap.png" alt="AblVST Studio Plugin map con plugin richiesti e disponibilità locale" loading="lazy" decoding="async" width="2341" height="1951"></div>
-            <figcaption><strong data-lang="it">Plugin map e disponibilità</strong><strong data-lang="en">Plugin map and availability</strong><p data-lang="it">Confronta i plugin richiesti dal Set con quelli installati, mostrando formato, vendor, percorso e stato.</p><p data-lang="en">Compare the plug-ins required by the Set with installed ones, including format, vendor, path and status.</p></figcaption>
+            <div class="screenshot-frame"><a href="assets/Pluginmap.png" target="_blank" rel="noopener noreferrer" aria-label="Open the Plugin map screenshot at full size"><img src="assets/Pluginmap.png" alt="AblVST Studio Plugin map con plugin richiesti e disponibilità locale" loading="lazy" decoding="async" width="2341" height="1951"></a></div>
+            <figcaption><strong data-lang="it">Plugin map e disponibilità</strong><strong data-lang="en">Plugin map and availability</strong><p data-lang="it">Confronta i plugin richiesti dal Set con quelli installati sul tuo computer: formato, vendor, percorso e stato di ognuno.</p><p data-lang="en">Compare the plug-ins required by the Set with those installed on your computer: format, vendor, path and status for each one.</p></figcaption>
           </figure>
 
           <figure class="screenshot-card screenshot-card-tall">
-            <div class="screenshot-frame"><img src="assets/sessionmap.png" alt="AblVST Studio Session map con gerarchia delle tracce e device chain" loading="lazy" decoding="async" width="1347" height="1904"></div>
-            <figcaption><strong data-lang="it">Session map e tracce</strong><strong data-lang="en">Session map and tracks</strong><p data-lang="it">Segui gruppi, tracce audio e MIDI, dispositivi e Rack annidati nella struttura del progetto.</p><p data-lang="en">Follow groups, audio and MIDI tracks, devices and nested Racks through the project structure.</p></figcaption>
+            <div class="screenshot-frame"><a href="assets/sessionmap.png" target="_blank" rel="noopener noreferrer" aria-label="Open the Session map screenshot at full size"><img src="assets/sessionmap.png" alt="AblVST Studio Session map con gerarchia delle tracce e device chain" loading="lazy" decoding="async" width="1347" height="1904"></a></div>
+            <figcaption><strong data-lang="it">Session map e tracce</strong><strong data-lang="en">Session map and tracks</strong><p data-lang="it">Naviga tra gruppi, tracce audio e MIDI, dispositivi e Rack annidati così come sono strutturati nel progetto.</p><p data-lang="en">Navigate groups, audio and MIDI tracks, devices and nested Racks as they are structured in the project.</p></figcaption>
           </figure>
 
           <figure class="screenshot-card screenshot-card-tall">
-            <div class="screenshot-frame"><img src="assets/routing.png" alt="AblVST Studio Return routing con mandate e tracce in ingresso" loading="lazy" decoding="async" width="1501" height="1928"></div>
-            <figcaption><strong data-lang="it">Routing dei Return</strong><strong data-lang="en">Return routing</strong><p data-lang="it">Leggi mandate, catene effetti e tracce che alimentano ogni Return senza aprire Ableton Live.</p><p data-lang="en">Read sends, effect chains and the tracks feeding each Return without opening Ableton Live.</p></figcaption>
+            <div class="screenshot-frame"><a href="assets/routing.png" target="_blank" rel="noopener noreferrer" aria-label="Open the Return routing screenshot at full size"><img src="assets/routing.png" alt="AblVST Studio Return routing con mandate e tracce in ingresso" loading="lazy" decoding="async" width="1501" height="1928"></a></div>
+            <figcaption><strong data-lang="it">Routing dei Return</strong><strong data-lang="en">Return routing</strong><p data-lang="it">Leggi mandate, catene effetti e tracce che alimentano ogni Return senza aprire Ableton Live.</p><p data-lang="en">See the sends, effect chains and tracks feeding each Return without opening Ableton Live.</p></figcaption>
           </figure>
 
           <figure class="screenshot-card screenshot-card-wide">
-            <div class="screenshot-frame"><img src="assets/media.png" alt="AblVST Studio Media Health con file audio trovati e riferimenti" loading="lazy" decoding="async" width="2353" height="1846"></div>
-            <figcaption><strong data-lang="it">Media Health</strong><strong data-lang="en">Media Health</strong><p data-lang="it">Verifica file audio, riferimenti, origine dei percorsi e risorse mancanti del Set.</p><p data-lang="en">Check audio files, references, path origins and missing resources in the Set.</p></figcaption>
+            <div class="screenshot-frame"><a href="assets/media.png" target="_blank" rel="noopener noreferrer" aria-label="Open the Media Health screenshot at full size"><img src="assets/media.png" alt="AblVST Studio Media Health con file audio trovati e riferimenti" loading="lazy" decoding="async" width="2353" height="1846"></a></div>
+            <figcaption><strong data-lang="it">Media Health</strong><strong data-lang="en">Media Health</strong><p data-lang="it">Verifica file audio, riferimenti, origine dei percorsi e risorse mancanti del Set.</p><p data-lang="en">Check the Set's audio files, references, path origins and missing resources.</p></figcaption>
           </figure>
 
           <figure class="screenshot-card screenshot-card-wide">
-            <div class="screenshot-frame"><img src="assets/plugincatalog.png" alt="AblVST Studio Plugin catalog con inventario dei plugin installati" loading="lazy" decoding="async" width="2147" height="1767"></div>
-            <figcaption><strong data-lang="it">Catalogo dei plugin installati</strong><strong data-lang="en">Installed plug-in catalog</strong><p data-lang="it">Cerca e filtra l'inventario locale per nome, produttore, formato, versione, architettura o percorso.</p><p data-lang="en">Search and filter the local inventory by name, vendor, format, version, architecture or path.</p></figcaption>
+            <div class="screenshot-frame"><a href="assets/plugincatalog.png" target="_blank" rel="noopener noreferrer" aria-label="Open the plug-in catalog screenshot at full size"><img src="assets/plugincatalog.png" alt="AblVST Studio Plugin catalog con inventario dei plugin installati" loading="lazy" decoding="async" width="2147" height="1767"></a></div>
+            <figcaption><strong data-lang="it">Catalogo dei plugin installati</strong><strong data-lang="en">Installed plug-in catalog</strong><p data-lang="it">Cerca e filtra l'inventario locale dei plugins per nome, produttore, formato, versione, architettura o percorso.</p><p data-lang="en">Search and filter your local plug-in inventory by name, vendor, format, version, architecture or path.</p></figcaption>
           </figure>
 
           <figure class="screenshot-card screenshot-card-tall">
-            <div class="screenshot-frame"><img src="assets/pref.png" alt="AblVST Studio Preferences con versioni di Live e percorsi dei plugin" loading="lazy" decoding="async" width="1348" height="1924"></div>
+            <div class="screenshot-frame"><a href="assets/pref.png" target="_blank" rel="noopener noreferrer" aria-label="Open the Preferences screenshot at full size"><img src="assets/pref.png" alt="AblVST Studio Preferences con versioni di Live e percorsi dei plugin" loading="lazy" decoding="async" width="1348" height="1924"></a></div>
             <figcaption><strong data-lang="it">Preferenze e percorsi</strong><strong data-lang="en">Preferences and scan paths</strong><p data-lang="it">Controlla versioni di Live, cartelle plugin, visibilità dei Set e cache locale.</p><p data-lang="en">Manage Live versions, plug-in folders, Set visibility and the local cache.</p></figcaption>
           </figure>
         </div>
@@ -187,8 +182,6 @@
 
       <section class="cta cta-download" id="download">
         <h2 data-lang="it">Scarica l'ultima versione</h2><h2 data-lang="en">Download the latest version</h2>
-        <p data-lang="it">Windows e macOS vengono pubblicati nella stessa release GitHub. La pagina aggiorna automaticamente versione e collegamenti quando viene pubblicata una nuova release.</p>
-        <p data-lang="en">Windows and macOS are published in the same GitHub release. This page automatically updates the version and download links when a new release is published.</p>
         <div class="download-actions">
           <a class="button ablvst" href="downloads/ablvst-studio/AblVST-Studio-1.0.1-Windows-x64-Setup.exe" data-ablvst-download="windows-setup" data-lang="it">Windows Setup</a>
           <a class="button ablvst" href="downloads/ablvst-studio/AblVST-Studio-1.0.1-Windows-x64-Setup.exe" data-ablvst-download="windows-setup" data-lang="en">Windows Setup</a>
@@ -206,13 +199,13 @@
         <p class="release-info" data-ablvst-release-status data-lang="it">Controllo release GitHub in corso...</p>
         <p class="release-info" data-ablvst-release-status data-lang="en">Checking GitHub release...</p>
         <p class="platform-note" data-lang="it"><strong>Nota Windows.</strong> L'app è gratuita e al momento non è firmata con un certificato di firma del codice. SmartScreen potrebbe mostrare un avviso per una nuova app: valuta il download secondo le tue normali pratiche di sicurezza.</p>
-        <p class="platform-note" data-lang="en"><strong>Windows note.</strong> The app is free and is not currently code-signed. SmartScreen may show a notice for a new app: assess the download using your usual security practices.</p>
+        <p class="platform-note" data-lang="en"><strong>Windows note.</strong> The app is free and currently unsigned. Windows SmartScreen may show a warning for a new app; use your usual security judgment when downloading.</p>
       </section>
 
       <section class="cta cta-support ablvst-support" aria-label="Support AblVST Studio">
         <h2 data-lang="it">Sostieni AblVST Studio</h2><h2 data-lang="en">Support AblVST Studio</h2>
         <p data-lang="it">AblVST Studio è gratuito. Se ti aiuta a recuperare, archiviare o controllare i tuoi Live Set, puoi sostenere volontariamente il suo sviluppo.</p>
-        <p data-lang="en">AblVST Studio is free. If it helps you recover, archive or check your Live Sets, you can voluntarily support its development.</p>
+        <p data-lang="en">AblVST Studio is free. If it helps you recover, archive or inspect your Live Sets, you can optionally support its development.</p>
         <div class="support-kofi-widget"><script type="text/javascript" src="https://storage.ko-fi.com/cdn/widget/Widget_2.js"></script><script type="text/javascript">kofiwidget2.init('Support me on Ko-fi', '#232a4a', 'U7I223UF77');kofiwidget2.draw();</script></div>
       </section>
     </section>
